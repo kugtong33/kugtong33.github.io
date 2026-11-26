@@ -1,0 +1,46 @@
+{% from "icons.njk" import arrow %}
+{% set fullName = profile.firstName + " " + profile.lastName %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#192bad">
+  <title>{{ (title or (fullName + " — " + profile.role)) | escape }}</title>
+  <meta name="description" content="{{ (description or profile.description) | escape }}">
+  {% if noIndex %}
+  <meta name="robots" content="noindex">
+  {% else %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ (title or fullName) | escape }}">
+  <meta property="og:description" content="{{ (description or profile.description) | escape }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  {% endif %}
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell masthead">
+      <a class="wordmark" href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>
+        <span class="wordmark-pin" aria-hidden="true"></span>{{ fullName }}
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/#projects">Projects</a>
+        <a href="{{ profile.github }}">GitHub {{ arrow() }}</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    {{ content | safe }}
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span>{{ fullName }}<span class="footer-location"> · {{ profile.location }}</span></span>
+      <a href="#top">Back to top {{ arrow("up") }}</a>
+    </div>
+  </footer>
+</body>
+</html>

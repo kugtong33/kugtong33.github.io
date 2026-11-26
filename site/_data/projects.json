@@ -1,0 +1,40 @@
+[
+  {
+    "id": "infrastructure",
+    "label": "Infrastructure",
+    "repos": [
+      {
+        "name": "Kubernetes Autoscaling Lab",
+        "repo": "labs-kube-autoscaling",
+        "description": "A local KinD lab that puts Kubernetes autoscaling under synthetic load, then records how it scales up and cools down."
+      }
+    ]
+  },
+  {
+    "id": "developer-tooling",
+    "label": "Developer tooling",
+    "repos": [
+      {
+        "name": "AWS Profiler",
+        "repo": "labs-aws-profiler",
+        "description": "A shell CLI for switching AWS profiles and checking that the active profile matches the current project."
+      }
+    ]
+  },
+  {
+    "id": "local-ai",
+    "label": "Local AI",
+    "repos": [
+      {
+        "name": "Local Language Models",
+        "repo": "labs-local-llm",
+        "description": "A setup for running GGUF language models on your own machine with llama.cpp or Ollama through the same API."
+      },
+      {
+        "name": "WikiRAG",
+        "repo": "labs-wikirag",
+        "description": "A lab for comparing retrieval-augmented generation approaches using Wikipedia articles and Qdrant."
+      }
+    ]
+  }
+]

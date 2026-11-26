@@ -1,0 +1,54 @@
+---
+layout: base.njk
+---
+{% from "icons.njk" import arrow %}
+<section class="intro" aria-labelledby="profile-name">
+  <div class="shell">
+    <div class="profile">
+      <div class="identity">
+        <h1 id="profile-name">{{ profile.firstName }}<br>{{ profile.lastName }}<span>.</span></h1>
+        <p class="bio">{{ profile.bio }}</p>
+      </div>
+      <figure class="profile-plate">
+        <div class="plate-top" aria-hidden="true"><span>Profile mark</span><span class="plate-cross"></span></div>
+        {% include "monogram.njk" %}
+        <figcaption><span class="plate-pin" aria-hidden="true"></span>@{{ profile.handle }}</figcaption>
+      </figure>
+    </div>
+    <nav class="routes" aria-label="Explore by topic">
+      {% for group in projects %}
+      <a class="route" href="#{{ group.id }}">
+        <span class="route-pin" aria-hidden="true"></span>{{ group.label }}{{ arrow("down") }}
+      </a>
+      {% endfor %}
+    </nav>
+  </div>
+</section>
+
+<section class="projects shell" id="projects" aria-labelledby="projects-title">
+  <div class="projects-intro">
+    <h2 id="projects-title">Selected projects</h2>
+    <p>Four public labs, from measuring how Kubernetes scales to comparing ways to retrieve information for language models.</p>
+  </div>
+  <div class="project-index">
+    {% for group in projects %}
+    <section class="project-group" id="{{ group.id }}" aria-labelledby="{{ group.id }}-title">
+      <h3 id="{{ group.id }}-title"><span class="index-pin" aria-hidden="true"></span>{{ group.label }}</h3>
+      <ul class="project-list">
+        {% for project in group.repos %}
+        <li>
+          <a class="project-link" href="{{ profile.github }}/{{ project.repo }}">
+            <div class="project-body">
+              <h4>{{ project.name }}</h4>
+              <p>{{ project.description }}</p>
+            </div>
+            <span class="repo-mark" aria-hidden="true">{{ arrow() }}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endfor %}
+  </div>
+  <a class="all-repos" href="{{ profile.github }}?tab=repositories">Browse all repositories {{ arrow() }}</a>
+</section>

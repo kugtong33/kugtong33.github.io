@@ -1,0 +1,11 @@
+{% macro arrow(direction = "out") %}
+<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false">
+  {% if direction == "down" %}
+  <path d="M10 3v13m-5-5 5 5 5-5"/>
+  {% elif direction == "up" %}
+  <path d="M10 17V4m-5 5 5-5 5 5"/>
+  {% else %}
+  <path d="M5 15 15 5M6 5h9v9"/>
+  {% endif %}
+</svg>
+{% endmacro %}

@@ -11,7 +11,8 @@ repository links, internal paths, fragment targets, and the 404 page.
 
 - Edit `site/_data/profile.json` for the profile and bio.
 - Edit `site/_data/projects.json` to update the public project list. Keep
-  group IDs stable so existing links still work.
+  group IDs stable so existing topic links still work. The repository
+  slug is also the anchor for its directory entry.
 - Add future work and writing under `site/` as Markdown or Nunjucks pages
   using `layout: base.njk`; add navigation only after a section has real
   content. Verify new pages and destinations in `test/site.test.js` when

@@ -1,11 +1,26 @@
 {% macro arrow(direction = "out") %}
 <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false">
-  {% if direction == "down" %}
-  <path d="M10 3v13m-5-5 5 5 5-5"/>
-  {% elif direction == "up" %}
+  {% if direction == "up" %}
   <path d="M10 17V4m-5 5 5-5 5 5"/>
+  {% elif direction == "left" %}
+  <path d="M17 10H4m5-5-5 5 5 5"/>
   {% else %}
   <path d="M5 15 15 5M6 5h9v9"/>
   {% endif %}
+</svg>
+{% endmacro %}
+
+{% macro branch() %}
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" aria-hidden="true" focusable="false">
+  <circle cx="6" cy="5" r="2.5"/>
+  <circle cx="6" cy="19" r="2.5"/>
+  <circle cx="18" cy="6" r="2.5"/>
+  <path d="M6 7.5v9M18 8.5c0 6.5-12 2-12 8"/>
+</svg>
+{% endmacro %}
+
+{% macro folder() %}
+<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true" focusable="false">
+  <path d="M3 4h5l2 2h7v9H3z"/>
 </svg>
 {% endmacro %}

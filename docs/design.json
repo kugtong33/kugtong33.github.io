@@ -1,75 +1,41 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-26T01:44:24Z",
+  "generatedAt": "2026-11-26T02:12:17Z",
   "title": "Design System: Arjay Sitoy",
   "extensions": {
     "colorMeta": {
-      "cobalt": {
-        "role": "primary",
-        "displayName": "Routing Cobalt",
-        "tonalRamp": ["oklch(15% .04 267)", "oklch(26% .09 267)", "oklch(37% .16 267)", "oklch(49% .21 267)", "oklch(60% .18 267)", "oklch(72% .12 267)", "oklch(84% .065 267)", "oklch(95% .018 267)"]
-      },
-      "panel": {
-        "role": "primary",
-        "displayName": "Plate Blue",
-        "tonalRamp": ["oklch(15% .04 268)", "oklch(26% .085 268)", "oklch(37% .15 268)", "oklch(49% .19 268)", "oklch(60% .16 268)", "oklch(72% .11 268)", "oklch(84% .06 268)", "oklch(95% .016 268)"]
-      },
-      "signal": {
-        "role": "primary",
-        "displayName": "Signal Peach",
-        "tonalRamp": ["oklch(15% .025 47)", "oklch(26% .052 47)", "oklch(37% .085 47)", "oklch(49% .12 47)", "oklch(60% .14 47)", "oklch(72% .135 47)", "oklch(84% .09 47)", "oklch(95% .025 47)"]
-      },
-      "paper": {
-        "role": "neutral",
-        "displayName": "Warm Paper",
-        "tonalRamp": ["oklch(15% .008 92)", "oklch(26% .013 92)", "oklch(37% .018 92)", "oklch(49% .024 92)", "oklch(60% .025 92)", "oklch(72% .022 92)", "oklch(84% .018 92)", "oklch(95% .012 92)"]
-      },
-      "ink": {
-        "role": "neutral",
-        "displayName": "Deep Ink",
-        "tonalRamp": ["oklch(15% .018 270)", "oklch(26% .05 270)", "oklch(37% .066 270)", "oklch(49% .072 270)", "oklch(60% .062 270)", "oklch(72% .047 270)", "oklch(84% .027 270)", "oklch(95% .008 270)"]
-      },
-      "muted": {
-        "role": "neutral",
-        "displayName": "Muted Ink",
-        "tonalRamp": ["oklch(15% .015 272)", "oklch(26% .028 272)", "oklch(37% .042 272)", "oklch(49% .048 272)", "oklch(60% .041 272)", "oklch(72% .032 272)", "oklch(84% .018 272)", "oklch(95% .006 272)"]
-      },
-      "light-ink": {
-        "role": "neutral",
-        "displayName": "Pale Ink",
-        "tonalRamp": ["oklch(15% .015 277)", "oklch(26% .032 277)", "oklch(37% .049 277)", "oklch(49% .062 277)", "oklch(60% .065 277)", "oklch(72% .057 277)", "oklch(84% .045 277)", "oklch(95% .022 277)"]
-      },
-      "dark-line": {
-        "role": "neutral",
-        "displayName": "Blue Keyline",
-        "tonalRamp": ["oklch(15% .035 275)", "oklch(26% .07 275)", "oklch(37% .105 275)", "oklch(49% .14 275)", "oklch(60% .145 275)", "oklch(72% .12 275)", "oklch(84% .068 275)", "oklch(95% .018 275)"]
-      },
-      "paper-line": {
-        "role": "neutral",
-        "displayName": "Paper Keyline",
-        "tonalRamp": ["oklch(15% .009 271)", "oklch(26% .016 271)", "oklch(37% .023 271)", "oklch(49% .029 271)", "oklch(60% .031 271)", "oklch(72% .027 271)", "oklch(84% .02 271)", "oklch(95% .008 271)"]
-      },
-      "target": {
-        "role": "neutral",
-        "displayName": "Target Tint",
-        "tonalRamp": ["oklch(15% .015 281)", "oklch(26% .03 281)", "oklch(37% .044 281)", "oklch(49% .055 281)", "oklch(60% .06 281)", "oklch(72% .05 281)", "oklch(84% .038 281)", "oklch(95% .025 281)"]
-      }
+      "ground": {"role": "neutral", "displayName": "Spruce Ground", "canonical": "#0e1a17"},
+      "rail": {"role": "neutral", "displayName": "Directory Green", "canonical": "#12211c"},
+      "pane": {"role": "neutral", "displayName": "Pane Green", "canonical": "#172923"},
+      "line": {"role": "neutral", "displayName": "Spruce Keyline", "canonical": "#385047"},
+      "text": {"role": "neutral", "displayName": "Pale Spruce Text", "canonical": "#e6ede6"},
+      "muted": {"role": "neutral", "displayName": "Soft Sage Text", "canonical": "#afc4b7"},
+      "accent": {"role": "primary", "displayName": "Mint Signal", "canonical": "#a7e3af"},
+      "target": {"role": "neutral", "displayName": "Target Green", "canonical": "#244236"},
+      "target-line": {"role": "neutral", "displayName": "Sage Target Keyline", "canonical": "#75a78b"}
     },
     "typographyMeta": {
-      "display": {"displayName": "Display", "purpose": "Large identity heading."},
-      "headline": {"displayName": "Headline", "purpose": "Major section or standalone page heading."},
-      "title": {"displayName": "Title", "purpose": "Repository names in the index."},
-      "body": {"displayName": "Body", "purpose": "Reading copy and repository descriptions."},
-      "label": {"displayName": "Label", "purpose": "Topic headings in the index."}
+      "display": {"displayName": "Display", "purpose": "Wide profile name and recovery title."},
+      "display-compact": {"displayName": "Compact Display", "purpose": "Profile name and recovery title at and below 52rem."},
+      "headline": {"displayName": "Section Heading", "purpose": "Selected projects heading."},
+      "subtitle": {"displayName": "Profile Subtitle", "purpose": "Introductory bio in the README."},
+      "title": {"displayName": "Repository Heading", "purpose": "Monospace repository slugs in the index."},
+      "body": {"displayName": "Body", "purpose": "Default reading copy and 404 explanation."},
+      "description": {"displayName": "Repository Description", "purpose": "Repository summaries above 52rem."},
+      "label": {"displayName": "Compact Text", "purpose": "System-sans navigation, actions, footer text, and repository summaries at and below 52rem."},
+      "annotation": {"displayName": "Topic Annotation", "purpose": "Muted topic label in a repository row."},
+      "path-annotation": {"displayName": "Tree Path", "purpose": "Muted repository paths in the desktop rail."},
+      "breadcrumb": {"displayName": "Breadcrumb", "purpose": "Monospace repository path and README name in the breadcrumb."},
+      "wordmark": {"displayName": "Wordmark", "purpose": "Monospace handle beside the branch icon above 24rem."},
+      "wordmark-compact": {"displayName": "Compact Wordmark", "purpose": "Monospace handle beside the branch icon at and below 24rem."}
     },
-    "shadows": [],
     "motion": [
-      {"name": "route-ease", "value": "cubic-bezier(.2, 1, .3, 1)", "purpose": "Easing for the topic-link arrow."},
-      {"name": "route-arrow-duration", "value": ".28s", "purpose": "Hover shifts the topic arrow .2rem down; reduced motion removes the shift and transition."}
+      {"name": "arrow-ease", "value": "cubic-bezier(.2, 1, .3, 1)", "purpose": "Easing for the repository arrow's hover shift."},
+      {"name": "project-arrow-duration", "value": ".22s", "purpose": "Hover translates the repository arrow by (.12rem, -.12rem); reduced motion removes the shift and transition."}
     ],
     "breakpoints": [
-      {"name": "stack-index-intro", "value": "54rem"},
-      {"name": "stack-columns", "value": "44rem"},
+      {"name": "stack-repository-topic", "value": "68rem"},
+      {"name": "collapse-tree-rail", "value": "52rem"},
       {"name": "compact-masthead", "value": "24rem"}
     ]
   },
@@ -78,64 +44,72 @@
       "name": "Masthead",
       "kind": "nav",
       "refersTo": "masthead",
-      "description": "Pin-and-name wordmark and plain links over a ruled cobalt band.",
-      "html": "<header class=\"ds-header\"><div class=\"ds-masthead\"><a class=\"ds-wordmark\" href=\"/\"><span class=\"ds-wordmark-pin\" aria-hidden=\"true\"></span>Arjay Sitoy</a><nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"/#projects\">Projects</a><a href=\"https://github.com/kugtong33\">GitHub <svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 15 15 5M6 5h9v9\"/></svg></a></nav></div></header>",
-      "css": ".ds-header{background:var(--color-cobalt,#192bad);color:var(--color-paper,#f5f2e9);font:1rem/1.55 var(--font-body,system-ui,sans-serif)}.ds-masthead{display:flex;justify-content:space-between;align-items:center;gap:1rem;min-block-size:4.75rem;border-bottom:1px solid var(--color-dark-line,#8594ea);inline-size:calc(100% - 2 * var(--page-gutter,clamp(1.25rem,5.55vw,5rem)));max-inline-size:var(--page-width,80rem);margin-inline:auto}.ds-masthead a,.ds-nav{display:flex;align-items:center}.ds-masthead a{gap:.45rem;min-block-size:2.75rem;color:inherit;text-decoration:none;text-underline-offset:.22em}.ds-masthead a:hover{text-decoration:underline}.ds-masthead a:focus-visible{outline:2px solid currentColor;outline-offset:4px}.ds-masthead .ds-wordmark{gap:.7rem;font-family:var(--font-display,Chivo,system-ui,sans-serif);font-weight:750}.ds-wordmark-pin{display:grid;place-items:center;box-sizing:border-box;inline-size:.75rem;block-size:.75rem;border:1px solid var(--color-signal,#ffab82);border-radius:50%}.ds-wordmark-pin::after{content:'';inline-size:.25rem;block-size:.25rem;border-radius:50%;background:var(--color-signal,#ffab82)}.ds-nav{gap:clamp(1rem,3vw,2.5rem);font-size:.9375rem}.ds-nav svg{inline-size:1.15rem}@media(max-width:44rem){.ds-masthead{min-block-size:4rem}}@media(max-width:24rem){.ds-masthead{gap:.7rem}.ds-nav{gap:.8rem;font-size:.875rem}.ds-masthead .ds-wordmark{gap:.4rem;font-size:.9375rem}.ds-nav svg{inline-size:.9rem}}"
+      "description": "Branch-and-handle home link and GitHub profile link over a single baseline rule.",
+      "html": "<header class=\"ds-header\"><div class=\"ds-masthead\"><a class=\"ds-wordmark\" href=\"/\" aria-label=\"@kugtong33 — Arjay Sitoy homepage\" aria-current=\"page\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.55\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"6\" cy=\"5\" r=\"2.5\"/><circle cx=\"6\" cy=\"19\" r=\"2.5\"/><circle cx=\"18\" cy=\"6\" r=\"2.5\"/><path d=\"M6 7.5v9M18 8.5c0 6.5-12 2-12 8\"/></svg> @kugtong33</a><a class=\"ds-masthead-link\" href=\"https://github.com/kugtong33\">GitHub profile <svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 15 15 5M6 5h9v9\"/></svg></a></div></header>",
+      "css": ".ds-header{background:var(--color-ground,#0e1a17);border-block-end:1px solid var(--color-line,#385047);font:1rem/1.55 var(--font-body,system-ui,sans-serif)}.ds-masthead{box-sizing:border-box;max-inline-size:var(--site-width,100rem);margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:.75rem;min-block-size:calc(var(--masthead-height,4.0625rem) - 1px);padding-inline:var(--edge-gutter,clamp(1.25rem,2.5vw,2.25rem))}.ds-masthead a{display:inline-flex;align-items:center;min-block-size:2.75rem;text-underline-offset:.25em}.ds-masthead a:focus-visible{outline:2px solid var(--color-accent,#a7e3af);outline-offset:4px}.ds-wordmark{gap:.75rem;color:var(--color-text,#e6ede6);font:650 .9375rem/1.4 var(--font-path,ui-monospace,SFMono-Regular,Consolas,monospace);text-decoration:none}.ds-wordmark svg{inline-size:1.375rem;color:var(--color-accent,#a7e3af)}.ds-wordmark:hover{text-decoration:underline}.ds-masthead-link{gap:.5rem;color:var(--color-accent,#a7e3af);font-size:.875rem;text-decoration:underline}.ds-masthead-link svg{inline-size:1rem;flex:none}.ds-masthead-link:hover{text-decoration-thickness:2px}@media(max-width:52rem){.ds-masthead{min-block-size:calc(var(--masthead-height,3.75rem) - 1px)}}@media(max-width:24rem){.ds-wordmark{gap:.4rem;font-size:.875rem}.ds-wordmark svg{inline-size:1.15rem}}"
     },
     {
-      "name": "Topic Route",
+      "name": "Directory Tree",
       "kind": "nav",
-      "refersTo": "route-link",
-      "description": "Ruled jump link with a peach terminal and a directional arrow.",
-      "html": "<nav class=\"ds-routes\" aria-label=\"Explore by topic\"><a class=\"ds-route\" href=\"/#infrastructure\"><span class=\"ds-route-pin\" aria-hidden=\"true\"></span>Infrastructure<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M10 3v13m-5-5 5 5 5-5\"/></svg></a><a class=\"ds-route\" href=\"/#developer-tooling\"><span class=\"ds-route-pin\" aria-hidden=\"true\"></span>Developer tooling<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M10 3v13m-5-5 5 5 5-5\"/></svg></a><a class=\"ds-route\" href=\"/#local-ai\"><span class=\"ds-route-pin\" aria-hidden=\"true\"></span>Local AI<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M10 3v13m-5-5 5 5 5-5\"/></svg></a></nav>",
-      "css": ".ds-routes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:var(--color-cobalt,#192bad);color:var(--color-paper,#f5f2e9);border-block-start:1px solid var(--color-dark-line,#8594ea);padding-block-end:.75rem}.ds-route{position:relative;display:flex;align-items:center;justify-content:space-between;gap:.5rem;box-sizing:border-box;min-block-size:3.65rem;padding:.75rem 1rem .75rem 1.125rem;font:650 .9375rem/1.55 var(--font-body,system-ui,sans-serif);color:inherit;text-decoration:none}.ds-route+.ds-route{border-inline-start:1px solid var(--color-dark-line,#8594ea)}.ds-route svg{inline-size:1.15rem;flex:none;color:var(--color-signal,#ffab82);transition:transform .28s var(--route-ease,cubic-bezier(.2,1,.3,1))}.ds-route-pin{position:absolute;inset:-.25rem auto auto 0;inline-size:.45rem;block-size:.45rem;border-radius:50%;background:var(--color-signal,#ffab82)}.ds-route:hover,.ds-route:focus-visible{background:var(--color-panel,#152691)}.ds-route:focus-visible{outline:2px solid currentColor;outline-offset:4px}.ds-route:hover svg{transform:translateY(.2rem)}@media(max-width:44rem){.ds-routes{grid-template-columns:1fr;padding-block-end:.5rem}.ds-route{min-block-size:3rem;padding-inline:.8rem}.ds-route+.ds-route{border-inline-start:0;border-top:1px solid var(--color-dark-line,#8594ea)}.ds-route-pin{inset:auto auto auto 0;inline-size:.32rem;block-size:.32rem}}@media(prefers-reduced-motion:reduce){.ds-route svg{transition:none}.ds-route:hover svg{transform:none}}"
+      "refersTo": "tree-rail",
+      "description": "Wide-layout fragment links with a quiet README default and an indented repository path.",
+      "html": "<nav class=\"ds-tree\" aria-label=\"Repository index\"><p class=\"ds-tree-root\">kugtong33.github.io</p><ul class=\"ds-tree-list\" role=\"list\"><li><a class=\"ds-tree-link ds-tree-readme\" href=\"/#readme\">README.md</a></li><li><a class=\"ds-tree-link\" href=\"/#projects\">Public labs</a><ul class=\"ds-tree-children\" role=\"list\"><li><a class=\"ds-tree-link\" href=\"/#labs-kube-autoscaling\">labs-kube-autoscaling</a></li></ul></li></ul></nav>",
+      "css": ".ds-tree{box-sizing:border-box;inline-size:min(100%,var(--rail-width,clamp(12rem,21vw,18.25rem)));padding:2.125rem clamp(.75rem,1.55vw,1.375rem);background:var(--color-rail,#12211c);border-inline-end:1px solid var(--color-line,#385047);font:.875rem/1.55 var(--font-body,system-ui,sans-serif)}.ds-tree-root,.ds-tree-children a{color:var(--color-muted,#afc4b7);font:.8125rem/1.45 var(--font-path,ui-monospace,SFMono-Regular,Consolas,monospace);overflow-wrap:anywhere}.ds-tree-root{margin:0 .875rem 1.05rem}.ds-tree-list,.ds-tree-children{margin:0;padding:0;list-style:none}.ds-tree-children{margin:.125rem 0 0 1.3rem;padding-inline-start:.3rem;border-inline-start:1px solid var(--color-line,#385047)}.ds-tree-link{box-sizing:border-box;display:flex;align-items:center;min-block-size:2.75rem;padding:.43rem .875rem;border:1px solid transparent;color:var(--color-text,#e6ede6);text-decoration:none;text-underline-offset:.25em}.ds-tree-readme{font-family:var(--font-path,ui-monospace,SFMono-Regular,Consolas,monospace)}.ds-tree-readme,.ds-tree-link:hover,.ds-tree-link:focus-visible{color:var(--color-accent,#a7e3af);background:var(--color-pane,#172923);border-color:var(--color-line,#385047)}.ds-tree-link:hover{text-decoration:underline}.ds-tree-link:focus-visible{outline:2px solid var(--color-accent,#a7e3af);outline-offset:0}"
     },
     {
-      "name": "Targeted Project Group",
+      "name": "README Breadcrumb",
+      "kind": "nav",
+      "refersTo": "breadcrumb",
+      "description": "Monospace context linking to the source repository and marking the current README.",
+      "html": "<nav class=\"ds-breadcrumb\" aria-label=\"Homepage context\"><a href=\"https://github.com/kugtong33/kugtong33.github.io\">kugtong33.github.io</a><span aria-hidden=\"true\">/</span><span aria-current=\"page\">README.md</span></nav>",
+      "css": ".ds-breadcrumb{box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;min-block-size:2.5rem;padding-block-end:.6rem;border-block-end:1px solid var(--color-line,#385047);background:var(--color-ground,#0e1a17);color:var(--color-muted,#afc4b7);font:.875rem/1.4 var(--font-path,ui-monospace,SFMono-Regular,Consolas,monospace)}.ds-breadcrumb a{color:inherit;padding-block:.35rem;text-decoration:none;text-underline-offset:.25em}.ds-breadcrumb a:hover{text-decoration:underline}.ds-breadcrumb a:focus-visible{outline:2px solid var(--color-accent,#a7e3af);outline-offset:4px}.ds-breadcrumb [aria-current]{color:var(--color-accent,#a7e3af)}"
+    },
+    {
+      "name": "Topic Navigation",
+      "kind": "nav",
+      "refersTo": "topic-nav",
+      "description": "Wrapping links to project groups, used in place of the tree at and below 52rem.",
+      "html": "<nav class=\"ds-topic-nav\" aria-label=\"Browse projects by topic\"><a href=\"/#infrastructure\">Infrastructure</a><a href=\"/#developer-tooling\">Developer tooling</a><a href=\"/#local-ai\">Local AI</a></nav>",
+      "css": ".ds-topic-nav{display:flex;flex-wrap:wrap;align-items:center;column-gap:clamp(.625rem,3vw,1.4rem);padding:.15rem .05rem;border-block:1px solid var(--color-line,#385047);background:var(--color-ground,#0e1a17);font:.875rem/1.55 var(--font-body,system-ui,sans-serif)}.ds-topic-nav a{display:inline-flex;align-items:center;min-block-size:2.75rem;color:var(--color-accent,#a7e3af);text-decoration:underline;text-underline-offset:.25em}.ds-topic-nav a:hover{text-decoration-thickness:2px}.ds-topic-nav a:focus-visible{outline:2px solid var(--color-accent,#a7e3af);outline-offset:4px}"
+    },
+    {
+      "name": "Repository Row",
       "kind": "custom",
-      "refersTo": "project-group-target",
-      "description": "Persistent fragment target shown with its tint, top rule, outlined pin, and full-row repository link.",
-      "html": "<section class=\"ds-project-group ds-preview-target\" id=\"ds-infrastructure\" aria-labelledby=\"ds-infrastructure-title\"><h3 id=\"ds-infrastructure-title\"><span class=\"ds-index-pin\" aria-hidden=\"true\"></span>Infrastructure</h3><ul class=\"ds-project-list\"><li><a class=\"ds-repo-row\" href=\"https://github.com/kugtong33/labs-kube-autoscaling\"><div><h4>Kubernetes Autoscaling Lab</h4><p>A local KinD lab that puts Kubernetes autoscaling under synthetic load, then records how it scales up and cools down.</p></div><span class=\"ds-repo-mark\" aria-hidden=\"true\"><svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 15 15 5M6 5h9v9\"/></svg></span></a></li></ul></section>",
-      "css": ".ds-project-group{display:grid;grid-template-columns:minmax(10rem,1fr) minmax(0,3.3fr);gap:1rem 2rem;border-top:1px solid var(--color-paper-line,#b9becd);background:var(--color-paper,#f5f2e9);color:var(--color-ink,#1b2444);font:1rem/1.55 var(--font-body,system-ui,sans-serif)}.ds-project-group:is(:target,.ds-preview-target){background:var(--color-target,#e7eaff);border-top-color:var(--color-cobalt,#192bad)}.ds-project-group h3{display:flex;align-items:center;align-self:start;gap:.65rem;margin:0;padding-block-start:1.8rem;color:var(--color-cobalt,#192bad);font-size:.9375rem;font-weight:700}.ds-index-pin{inline-size:.45rem;block-size:.45rem;flex:none;border-radius:50%;background:currentColor}.ds-project-group:is(:target,.ds-preview-target) .ds-index-pin{background:var(--color-signal,#ffab82);outline:1px solid var(--color-cobalt,#192bad);outline-offset:2px}.ds-project-list{margin:0;padding:0;list-style:none}.ds-project-list li+li{border-top:1px solid var(--color-paper-line,#b9becd)}.ds-repo-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:1rem;padding-block:1.45rem;color:inherit;text-decoration:none;text-underline-offset:.22em}.ds-repo-row h4{margin:0 0 .32rem;font:750 clamp(1.5rem,2.6vw,2.2rem)/1.06 var(--font-display,Chivo,system-ui,sans-serif);letter-spacing:-.04em}.ds-repo-row p{margin:0;max-inline-size:61ch;color:var(--color-muted,#4d5570);text-wrap:pretty}.ds-repo-mark{display:grid;place-items:center;box-sizing:border-box;inline-size:2.75rem;block-size:2.75rem;border:1px solid var(--color-cobalt,#192bad);color:var(--color-cobalt,#192bad)}.ds-repo-mark svg{inline-size:1.35rem}.ds-repo-row:hover h4,.ds-repo-row:focus-visible h4{text-decoration:underline}.ds-repo-row:hover .ds-repo-mark,.ds-repo-row:focus-visible .ds-repo-mark{color:var(--color-paper,#f5f2e9);background:var(--color-cobalt,#192bad)}.ds-repo-row:focus-visible{outline:2px solid currentColor;outline-offset:4px}@media(max-width:44rem){.ds-project-group{grid-template-columns:1fr;gap:0}.ds-project-group h3{padding-block-start:1.05rem}.ds-repo-row{padding-block:.9rem 1.15rem}}"
+      "refersTo": "repository-row",
+      "description": "Full-width repository link with a real slug, description, topic annotation, and distinct hover, focus, and fragment states.",
+      "html": "<div class=\"ds-project-index\"><section class=\"ds-project-group\" id=\"infrastructure\" aria-labelledby=\"ds-infrastructure-title\"><h3 class=\"ds-visually-hidden\" id=\"ds-infrastructure-title\">Infrastructure</h3><ul class=\"ds-project-list\" role=\"list\"><li class=\"ds-project-item\" id=\"labs-kube-autoscaling\"><a class=\"ds-project-link\" href=\"https://github.com/kugtong33/labs-kube-autoscaling\"><span class=\"ds-project-folder\"><svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M3 4h5l2 2h7v9H3z\"/></svg></span><div class=\"ds-project-copy\"><h4>labs-kube-autoscaling</h4><p>A local KinD lab that puts Kubernetes autoscaling under synthetic load, then records how it scales up and cools down.</p></div><span class=\"ds-project-topic\" aria-hidden=\"true\">Infrastructure</span><span class=\"ds-project-arrow\"><svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 15 15 5M6 5h9v9\"/></svg></span></a></li></ul></section></div>",
+      "css": ".ds-project-index{background:var(--color-ground,#0e1a17);border-block-end:1px solid var(--color-line,#385047);font:1rem/1.55 var(--font-body,system-ui,sans-serif)}.ds-visually-hidden{position:absolute;inline-size:1px;block-size:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.ds-project-list{margin:0;padding:0;list-style:none}.ds-project-item{border-block-start:1px solid var(--color-line,#385047)}.ds-project-link{display:grid;grid-template-columns:1rem minmax(0,1fr) minmax(7.5rem,10rem) 1rem;align-items:center;gap:.875rem;padding:.8rem .75rem;color:var(--color-text,#e6ede6);text-decoration:none;text-underline-offset:.25em}.ds-project-folder,.ds-project-arrow{display:flex;color:var(--color-accent,#a7e3af)}.ds-project-folder svg,.ds-project-arrow svg{inline-size:100%}.ds-project-arrow{transition:transform .22s var(--arrow-ease,cubic-bezier(.2,1,.3,1))}.ds-project-copy h4{margin:0 0 .15rem;font:650 clamp(.95rem,1.2vw,1.0625rem)/1.38 var(--font-path,ui-monospace,SFMono-Regular,Consolas,monospace);overflow-wrap:anywhere}.ds-project-copy p{margin:0;max-inline-size:66ch;color:var(--color-muted,#afc4b7);font-size:.9375rem;text-wrap:pretty}.ds-project-topic{color:var(--color-muted,#afc4b7);font-size:.8125rem}.ds-project-index:not(:has(:target)) .ds-project-group:first-child .ds-project-item:first-child .ds-project-link,.ds-project-link:hover,.ds-project-link:focus-visible{background:var(--color-pane,#172923)}.ds-project-link:hover h4,.ds-project-link:focus-visible h4{color:var(--color-accent,#a7e3af);text-decoration:underline}.ds-project-link:hover .ds-project-arrow{transform:translate(.12rem,-.12rem)}.ds-project-item:target .ds-project-link,.ds-project-group:target .ds-project-link{background:var(--color-target,#244236);outline:1px solid var(--color-target-line,#75a78b);outline-offset:-1px}.ds-project-item:target h4,.ds-project-group:target h4{color:var(--color-accent,#a7e3af)}.ds-project-item .ds-project-link:focus-visible{outline:2px solid var(--color-accent,#a7e3af);outline-offset:-3px}@media(max-width:68rem){.ds-project-link{grid-template-columns:1rem minmax(0,1fr) 1rem;gap:.25rem .7rem}.ds-project-folder,.ds-project-arrow{align-self:start;margin-block-start:.19rem}.ds-project-topic{grid-column:2}.ds-project-arrow{grid-column:3;grid-row:1}}@media(max-width:52rem){.ds-project-copy p{font-size:.875rem}}@media(prefers-reduced-motion:reduce){.ds-project-arrow{transition:none}.ds-project-link:hover .ds-project-arrow{transform:none}}"
     },
     {
       "name": "Index Link",
       "kind": "custom",
       "refersTo": "index-link",
-      "description": "Underlined cobalt text link for standalone actions on paper.",
-      "html": "<a class=\"ds-index-link\" href=\"https://github.com/kugtong33?tab=repositories\">Browse all repositories<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 15 15 5M6 5h9v9\"/></svg></a>",
-      "css": ".ds-index-link{display:inline-flex;align-items:center;gap:.55rem;min-block-size:2.75rem;color:var(--color-cobalt,#192bad);font:650 1rem/1.55 var(--font-body,system-ui,sans-serif);text-decoration:underline;text-underline-offset:.22em}.ds-index-link svg{inline-size:1.15rem}.ds-index-link:hover{text-decoration-thickness:2px}.ds-index-link:focus-visible{outline:2px solid currentColor;outline-offset:4px}"
-    },
-    {
-      "name": "Schematic Plate",
-      "kind": "custom",
-      "refersTo": "schematic-plate",
-      "description": "Ruled blue frame for the original vector monogram and its caption.",
-      "html": "<figure class=\"ds-plate\"><div class=\"ds-plate-top\" aria-hidden=\"true\"><span>Profile mark</span><span class=\"ds-plate-cross\"></span></div><svg class=\"ds-plate-drawing\" viewBox=\"0 0 480 318\" fill=\"none\" aria-hidden=\"true\" focusable=\"false\"><defs><pattern id=\"ds-diagram-grid\" width=\"24\" height=\"24\" patternUnits=\"userSpaceOnUse\"><path d=\"M24 0H0V24\" stroke=\"#4959c4\" stroke-opacity=\".40\"/></pattern></defs><path fill=\"url(#ds-diagram-grid)\" d=\"M0 0h480v318H0z\"/><g stroke=\"#8494f1\" stroke-width=\"1\" vector-effect=\"non-scaling-stroke\"><path d=\"M0 78h56l24 24h32m-112 130h60l24-24h24M480 66h-67l-25 25h-32m124 163h-55l-40-40h-29M178 0v28l20 20v26m110 244v-26l-21-21v-29\" opacity=\".8\"/><path d=\"M72 40h14m-7-7v14m310 229h14m-7-7v14M72 276h14m-7-7v14M389 40h14m-7-7v14\" opacity=\".7\"/><path d=\"M68 151h51m249 0h46M240 20v48m0 184v46M42 300h54m-54-6v12m54-12v12\" stroke-dasharray=\"3 5\" opacity=\".7\"/><path d=\"M125 74h226v169H125z\" stroke-dasharray=\"3 5\" opacity=\".7\"/><circle cx=\"112\" cy=\"102\" r=\"4\"/><circle cx=\"108\" cy=\"208\" r=\"4\"/><circle cx=\"356\" cy=\"91\" r=\"4\"/><circle cx=\"356\" cy=\"214\" r=\"4\"/></g><path fill=\"#f5f2e9\" fill-rule=\"evenodd\" d=\"m111 221 53-124h31l53 124h-34l-10-26h-50l-10 26h-33Zm53-51h30l-15-40-15 40Z\"/><path fill=\"#ffab82\" d=\"M281 100c13-6 28-7 44-4 15 3 29 10 39 20l-18 22c-12-10-25-16-39-16-11 0-18 4-18 11 0 8 10 11 24 14 29 6 51 15 51 40 0 25-22 37-51 37-24 0-46-9-62-24l19-22c13 12 28 19 45 19 12 0 19-4 19-11 0-6-7-10-24-14-30-6-51-14-51-39 0-14 8-26 22-33Z\"/><path d=\"M24 78h32l24 24h21m315 152h9m-117 42v-4l-21-21v-16\" stroke=\"#ffab82\"/><g fill=\"#ffab82\"><circle cx=\"24\" cy=\"78\" r=\"4\"/><circle cx=\"425\" cy=\"254\" r=\"4\"/><circle cx=\"308\" cy=\"296\" r=\"4\"/></g></svg><figcaption class=\"ds-plate-caption\"><span class=\"ds-plate-pin\" aria-hidden=\"true\"></span>@kugtong33</figcaption></figure>",
-      "css": ".ds-plate{position:relative;margin:0;border:1px solid var(--color-dark-line,#8594ea);background:var(--color-panel,#152691);color:var(--color-light-ink,#e0e5ff);font:.8125rem/1.55 var(--font-body,system-ui,sans-serif)}.ds-plate-top,.ds-plate-caption{display:flex;align-items:center;gap:.6rem;min-block-size:2.75rem;padding-inline:clamp(.75rem,2vw,1.25rem)}.ds-plate-top{justify-content:space-between;border-bottom:1px solid var(--color-dark-line,#8594ea)}.ds-plate-caption{border-top:1px solid var(--color-dark-line,#8594ea)}.ds-plate-cross{position:relative;inline-size:.875rem;block-size:.875rem}.ds-plate-cross::before,.ds-plate-cross::after{content:'';position:absolute;inset:50% 0 auto;border-top:1px solid currentColor}.ds-plate-cross::after{rotate:90deg}.ds-plate-drawing{display:block;inline-size:100%;block-size:auto}.ds-plate-pin{inline-size:.45rem;block-size:.45rem;flex:none;border-radius:50%;background:var(--color-signal,#ffab82)}@media(max-width:44rem){.ds-plate{max-inline-size:25rem}.ds-plate-top,.ds-plate-caption{min-block-size:2.25rem}}"
+      "description": "Underlined text action with an inline directional arrow, also used for recovery and back to top.",
+      "html": "<div class=\"ds-index-link-surface\"><a class=\"ds-index-link\" href=\"https://github.com/kugtong33?tab=repositories\">All repositories <svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 15 15 5M6 5h9v9\"/></svg></a></div>",
+      "css": ".ds-index-link-surface{background:var(--color-ground,#0e1a17)}.ds-index-link{display:inline-flex;align-items:center;gap:.5rem;min-block-size:2.75rem;color:var(--color-accent,#a7e3af);font:.875rem/1.55 var(--font-body,system-ui,sans-serif);text-decoration:underline;text-underline-offset:.25em}.ds-index-link svg{inline-size:1rem;flex:none}.ds-index-link:hover{text-decoration-thickness:2px}.ds-index-link:focus-visible{outline:2px solid var(--color-accent,#a7e3af);outline-offset:4px}"
     }
   ],
   "narrative": {
-    "northStar": "Signal Plate",
-    "overview": "Signal Plate looks like a printed routing diagram: matte cobalt, peach terminals, and hairline rules. Flat fields and an original vector monogram carry the identity.\n\nThe warm paper index is the quieter counterpart. Oversized Chivo sets the hierarchy; system text and ruled rows make the links easy to scan. A pale blue tint and a ringed peach terminal show where a topic link landed.",
+    "northStar": "Source Tree",
+    "overview": "Source Tree feels like opening a well-kept repository: a quiet README pane, a directory drawn with thin rules, and real project names where you expect to find them. The repository metaphor helps people find the work; it doesn't imitate an editor or a terminal.\n\nA bold name and plain reading copy keep the profile personal. Monospace picks out paths and identifiers. Flat spruce-black surfaces leave mint for links, small icons, and keyboard focus; a separate tint shows where a fragment link landed.",
     "keyCharacteristics": [
-      "Matte cobalt and warm paper, with peach used as a signal.",
-      "Heavy Chivo paired with compact, readable system text.",
-      "Square frames, thin rules, round terminals, and inline SVG."
+      "Spruce-black ground, softly separated surfaces, and mint for actions.",
+      "Chivo headings, system-sans reading copy, and monospace paths.",
+      "Square, ruled rows with native links and persistent fragment states."
     ],
     "rules": [
-      {"name": "The Peach Signal Rule", "body": "Use peach for terminals, directional marks, and identity accents. In the paper index, standalone links stay cobalt; only the targeted group's pin turns peach, with a cobalt outline.", "section": "colors"},
-      {"name": "The Chivo for Hierarchy Rule", "body": "Reserve Chivo for the wordmark and headings; use system text for copy, navigation, and captions.", "section": "typography"},
-      {"name": "The Flat Plate Rule", "body": "No shadows. Separate surfaces with a change of ground, a keyline, or space; show interaction with a fill, underline, or outline rather than lift.", "section": "elevation"}
+      {"name": "The Mint Signal Rule", "body": "Use the brightest color for things people can follow or need to locate. Keep paragraphs neutral; use the stronger tinted panel and its own keyline to show where a local jump landed.", "section": "colors"},
+      {"name": "The Paths Are Not Paragraphs Rule", "body": "Use monospace for identifiers, Chivo for page and section headings, and system sans for reading. The `.8125rem` and `.875rem` tiers are intentional annotation and compact text roles, not defaults for long-form reading or substitutes for link target size.", "section": "typography"},
+      {"name": "The Flat Workspace Rule", "body": "No shadows. Separate regions with tone, space, or a one-pixel keyline. Show interaction with a fill, underline, or outline rather than lift.", "section": "elevation"}
     ],
     "dos": [
-      "Do use native links and fragment targets so navigation and content work without JavaScript.",
-      "Do keep the skip link, meaningful headings, visible text labels, and the `2px` current-color focus outline with `4px` offset.",
-      "Do keep decorative arrows and marks out of the accessibility tree."
+      "Do use native anchors and meaningful fragment targets so navigation and content work without JavaScript.",
+      "Do preserve the skip link, heading hierarchy, visible link labels, and distinct keyboard-focus outlines.",
+      "Do keep decorative branch, folder, and arrow SVGs out of the accessibility tree."
     ],
     "donts": [
-      "Don't add shadows or round the structural frames.",
-      "Don't ship raster artwork; keep the schematic mark and icons as vectors."
+      "Don't add shadows, round the structural frames, or turn repository rows into detached cards.",
+      "Don't add fake controls or terminal chrome. Use inline vector marks alongside text rather than raster decoration or glyphs standing in for icons."
     ]
   }
 }

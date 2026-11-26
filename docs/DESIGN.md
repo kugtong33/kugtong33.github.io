@@ -1,160 +1,195 @@
 ---
 name: Arjay Sitoy
-description: Signal Plate — a matte cobalt routing sheet and warm paper index.
+description: Source Tree — a spruce-dark README and a ruled index of public repositories.
 colors:
-  cobalt: "#192bad"
-  panel: "#152691"
-  signal: "#ffab82"
-  paper: "#f5f2e9"
-  ink: "#1b2444"
-  muted: "#4d5570"
-  light-ink: "#e0e5ff"
-  dark-line: "#8594ea"
-  paper-line: "#b9becd"
-  target: "#e7eaff"
+  ground: "#0e1a17"
+  rail: "#12211c"
+  pane: "#172923"
+  line: "#385047"
+  text: "#e6ede6"
+  muted: "#afc4b7"
+  accent: "#a7e3af"
+  target: "#244236"
+  target-line: "#75a78b"
 typography:
   display:
     fontFamily: "Chivo, system-ui, sans-serif"
-    fontSize: "clamp(4.75rem, 11.65vw, 10.6rem)"
-    fontWeight: 850
-    lineHeight: 0.91
+    fontSize: "clamp(3.25rem, 6.55vw, 5.875rem)"
+    fontWeight: 780
+    lineHeight: 1
+    letterSpacing: "-.035em"
+  display-compact:
+    fontFamily: "Chivo, system-ui, sans-serif"
+    fontSize: "clamp(2.85rem, 10.25vw, 4.625rem)"
+    fontWeight: 780
+    lineHeight: 1
     letterSpacing: "-.035em"
   headline:
     fontFamily: "Chivo, system-ui, sans-serif"
-    fontSize: "clamp(2.55rem, 6.3vw, 5.75rem)"
-    fontWeight: 800
-    lineHeight: 0.98
-    letterSpacing: "-.057em"
+    fontSize: "clamp(1.5rem, 2.2vw, 2rem)"
+    fontWeight: 740
+    lineHeight: 1.15
+    letterSpacing: "-.035em"
+  subtitle:
+    fontFamily: "system-ui, sans-serif"
+    fontSize: "clamp(1.0625rem, 1.53vw, 1.375rem)"
+    lineHeight: 1.47
   title:
-    fontFamily: "Chivo, system-ui, sans-serif"
-    fontSize: "clamp(1.5rem, 2.6vw, 2.2rem)"
-    fontWeight: 750
-    lineHeight: 1.06
-    letterSpacing: "-.04em"
+    fontFamily: "ui-monospace, SFMono-Regular, Consolas, monospace"
+    fontSize: "clamp(.95rem, 1.2vw, 1.0625rem)"
+    fontWeight: 650
+    lineHeight: 1.38
   body:
     fontFamily: "system-ui, sans-serif"
     fontSize: "1rem"
     lineHeight: 1.55
-  label:
+  description:
     fontFamily: "system-ui, sans-serif"
     fontSize: ".9375rem"
-    fontWeight: 700
-rounded:
-  square: "0px"
-  terminal: "50%"
+    lineHeight: 1.55
+  label:
+    fontFamily: "system-ui, sans-serif"
+    fontSize: ".875rem"
+    lineHeight: 1.55
+  annotation:
+    fontFamily: "system-ui, sans-serif"
+    fontSize: ".8125rem"
+    lineHeight: 1.55
+  path-annotation:
+    fontFamily: "ui-monospace, SFMono-Regular, Consolas, monospace"
+    fontSize: ".8125rem"
+    lineHeight: 1.45
+  breadcrumb:
+    fontFamily: "ui-monospace, SFMono-Regular, Consolas, monospace"
+    fontSize: ".875rem"
+    lineHeight: 1.4
+  wordmark:
+    fontFamily: "ui-monospace, SFMono-Regular, Consolas, monospace"
+    fontSize: ".9375rem"
+    fontWeight: 650
+    lineHeight: 1.4
+  wordmark-compact:
+    fontFamily: "ui-monospace, SFMono-Regular, Consolas, monospace"
+    fontSize: ".875rem"
+    fontWeight: 650
+    lineHeight: 1.4
 spacing:
-  gutter: "clamp(1.25rem, 5.55vw, 5rem)"
-  gap: "1rem"
-  column-gap: "2rem"
+  edge-gutter: "clamp(1.25rem, 2.5vw, 2.25rem)"
+  readme-gutter: "clamp(1.25rem, 4.6vw, 4.125rem)"
+  rail-gutter: "clamp(.75rem, 1.55vw, 1.375rem)"
+  icon-link-gap: ".5rem"
+  action-height: "2.75rem"
 components:
   masthead:
-    backgroundColor: "{colors.cobalt}"
-    textColor: "{colors.paper}"
-  route-link:
-    backgroundColor: "{colors.cobalt}"
-    textColor: "{colors.paper}"
-    padding: ".75rem 1rem .75rem 1.125rem"
-  route-link-highlight:
-    backgroundColor: "{colors.panel}"
-  project-group-target:
-    backgroundColor: "{colors.target}"
-  project-pin-target:
-    backgroundColor: "{colors.signal}"
-    rounded: "{rounded.terminal}"
-    size: ".45rem"
+    backgroundColor: "{colors.ground}"
+    textColor: "{colors.text}"
+  tree-rail:
+    backgroundColor: "{colors.rail}"
+    textColor: "{colors.text}"
+    width: "clamp(12rem, 21vw, 18.25rem)"
+  tree-link-highlight:
+    backgroundColor: "{colors.pane}"
+    textColor: "{colors.accent}"
+  breadcrumb:
+    textColor: "{colors.muted}"
+    typography: "{typography.breadcrumb}"
+  topic-nav:
+    textColor: "{colors.accent}"
+    typography: "{typography.label}"
   repository-row:
-    textColor: "{colors.ink}"
-    padding: "1.45rem 0"
-  repository-mark:
-    textColor: "{colors.cobalt}"
-    rounded: "{rounded.square}"
-    size: "2.75rem"
-  repository-mark-highlight:
-    backgroundColor: "{colors.cobalt}"
-    textColor: "{colors.paper}"
+    textColor: "{colors.text}"
+    padding: ".8rem .75rem"
+  repository-row-highlight:
+    backgroundColor: "{colors.pane}"
+  repository-row-target:
+    backgroundColor: "{colors.target}"
   index-link:
-    textColor: "{colors.cobalt}"
-  schematic-plate:
-    backgroundColor: "{colors.panel}"
-    textColor: "{colors.light-ink}"
-    rounded: "{rounded.square}"
+    textColor: "{colors.accent}"
+    typography: "{typography.label}"
+  skip-link:
+    backgroundColor: "{colors.accent}"
+    textColor: "{colors.ground}"
+    padding: ".65rem 1rem"
 ---
 
 # Design System: Arjay Sitoy
 
 ## Overview
 
-**Creative North Star: "Signal Plate"**
+**Creative North Star: "Source Tree"**
 
-Signal Plate looks like a printed routing diagram: matte cobalt, peach terminals, and hairline rules. Flat fields and an original vector monogram carry the identity.
+Source Tree feels like opening a well-kept repository: a quiet README pane, a directory drawn with thin rules, and real project names where you expect to find them. The repository metaphor helps people find the work; it doesn't imitate an editor or a terminal.
 
-The warm paper index is the quieter counterpart. Oversized Chivo sets the hierarchy; system text and ruled rows make the links easy to scan. A pale blue tint and a ringed peach terminal show where a topic link landed.
+A bold name and plain reading copy keep the profile personal. Monospace picks out paths and identifiers. Flat spruce-black surfaces leave mint for links, small icons, and keyboard focus; a separate tint shows where a fragment link landed.
 
 **Key Characteristics:**
 
-- Matte cobalt and warm paper, with peach used as a signal.
-- Heavy Chivo paired with compact, readable system text.
-- Square frames, thin rules, round terminals, and inline SVG.
+- Spruce-black ground, softly separated surfaces, and mint for actions.
+- Chivo headings, system-sans reading copy, and monospace paths.
+- Square, ruled rows with native links and persistent fragment states.
 
-Source: the code-first build's [stylesheet](../site/assets/site.css), [homepage](../site/index.njk), and [shared layout](../site/_includes/base.njk), checked against the desktop and mobile captures in `.impeccable/review/`. Page strategy and composition stay in the [profile surface brief](profile-surface.md).
+Eleventy renders the [home README and index](../site/index.njk) and the [404 recovery page](../site/404.njk) through the same [base layout](../site/_includes/base.njk). The base loads the [stylesheet](../site/assets/site.css), which owns the tokens and responsive states. Both pages use the shared [SVG icon macros](../site/_includes/icons.njk). The homepage uses [site](../site/_data/site.json) and [profile](../site/_data/profile.json) data for identity and context, and one [projects data set](../site/_data/projects.json) for the desktop tree, mobile topics, and repository rows. `docs/design.json` is a documentation sidecar, not a build input.
+
+Visual evidence: full-page desktop (`1440 × 1007`) and mobile (`390 × 1171`) captures at `.impeccable/review/source-tree/desktop.png` and `.impeccable/review/source-tree/mobile.png`. Page strategy and composition decisions stay in the [profile surface brief](profile-surface.md).
 
 ## Colors
 
 ### Primary
 
-- **Routing Cobalt** (`cobalt`): structural bands, headings and links on paper, and the filled state of the repository arrow.
-- **Plate Blue** (`panel`): darker inset field for the monogram frame and highlighted topic links.
-- **Signal Peach** (`signal`): the name's period, terminals, route arrows, parts of the monogram, text selection, and the outlined pin at a topic destination.
+- **Mint Signal** (`accent`): links, the branch/folder/arrow strokes, the current breadcrumb, keyboard focus, targeted repository names, and the selection fill. Selected text switches to the ground color.
 
 ### Neutral
 
-- **Warm Paper** (`paper`): light background and main lettering on cobalt.
-- **Deep Ink** (`ink`) and **Muted Ink** (`muted`): titles and default body text, then supporting copy on paper.
-- **Pale Ink** (`light-ink`): supporting copy and captions on blue.
-- **Blue Keyline** (`dark-line`) and **Paper Keyline** (`paper-line`): one-pixel structural rules on their respective grounds, not text colors.
-- **Target Tint** (`target`): pale blue field behind the project group named by the URL fragment.
+- **Spruce Ground** (`ground`): page, masthead, and reading pane.
+- **Directory Green** (`rail`): desktop tree and footer; **Pane Green** (`pane`): quiet default and interactive highlights.
+- **Spruce Keyline** (`line`): structural dividers, indentation guides, and the border on highlighted tree links; not a text color.
+- **Pale Spruce Text** (`text`): headings and primary text; **Soft Sage Text** (`muted`): bio, descriptions, paths, and annotations.
+- **Target Green** (`target`) and **Sage Target Keyline** (`target-line`): the persistent destination fill and inset outline, distinct from transient hover and focus.
 
-**The Peach Signal Rule.** Use peach for terminals, directional marks, and identity accents. In the paper index, standalone links stay cobalt; only the targeted group's pin turns peach, with a cobalt outline.
-
-The sidecar's tonal ramps are preview swatches, not additional site colors.
+**The Mint Signal Rule.** Use the brightest color for things people can follow or need to locate. Keep paragraphs neutral; use the stronger tinted panel and its own keyline to show where a local jump landed.
 
 ## Typography
 
-Chivo is self-hosted as a Latin WOFF2 variable font (normal, `600–900`, `font-display: swap`) under the [SIL Open Font License](../site/assets/chivo-OFL.txt). It falls back to the system sans, which is also the body and label face.
+Chivo is self-hosted as a Latin WOFF2 variable face (normal, weights `600–900`, `font-display: swap`) under the [SIL Open Font License](../site/assets/chivo-OFL.txt). It falls back to system sans. System sans carries reading copy, and a native monospace stack carries handles, paths, and repository names.
 
-- **Display:** identity heading (`850`, `.91` line height, `-.035em` tracking). On narrow screens use `clamp(4.6rem, 16vw, 7.25rem)`.
-- **Headline:** major section or standalone page heading (`800`, `.98` line height, `-.057em` tracking).
-- **Title:** repository name (`750`, `1.06` line height, `-.04em` tracking).
-- **Body:** `1rem` with `1.55` line height; repository descriptions stop at `61ch`. The larger introduction uses `clamp(1.05rem, 1.6vw, 1.4rem)`, `1.52` line height, and a `39ch` measure.
-- **Label:** small system text in normal case. Topic headings use `700`, route labels `650`, and plate captions `.8125rem`.
+- **Display:** the profile name and 404 title (`780`, line height `1`, tracking `-.035em`). Wide screens use `clamp(3.25rem, 6.55vw, 5.875rem)`; at `52rem` and below, use `clamp(2.85rem, 10.25vw, 4.625rem)`.
+- **Section heading:** “Selected projects” uses Chivo (`740`, line height `1.15`, tracking `-.035em`) at `clamp(1.5rem, 2.2vw, 2rem)`.
+- **Subtitle:** the profile bio uses `clamp(1.0625rem, 1.53vw, 1.375rem)`, line height `1.47`, and a `58ch` maximum measure.
+- **Repository heading:** use monospace (`650`, line height `1.38`) at `clamp(.95rem, 1.2vw, 1.0625rem)` and allow long names to wrap anywhere.
+- **Body and descriptions:** default reading copy is `1rem` with line height `1.55`. Repository descriptions use `.9375rem`, drop to `.875rem` at `52rem` and below, and cap at `66ch`. The 404 explanation uses normal body size and caps at `45ch`.
+- **Labels and annotations:** `.875rem` for compact system text (navigation, standalone actions, footer, and compact descriptions) and for the monospace breadcrumb (line height `1.4`); `.8125rem` for muted repository topic labels and tree-path annotations (tree paths use line height `1.45`). The monospace handle uses `650` at `.9375rem`, stepping to `.875rem` at `24rem` and below.
 
-**The Chivo for Hierarchy Rule.** Reserve Chivo for the wordmark and headings; use system text for copy, navigation, and captions.
+**The Paths Are Not Paragraphs Rule.** Use monospace for identifiers, Chivo for page and section headings, and system sans for reading. The `.8125rem` and `.875rem` tiers are intentional annotation and compact text roles, not defaults for long-form reading or substitutes for link target size.
 
 ## Layout
 
-- Align masthead, content, and footer to an `80rem` maximum inner width with fluid gutters on both sides. Full-width color bands sit behind that shell.
-- Use aligned columns and ruled rows on wide screens. At `54rem` and below, stack an index heading and its supporting copy. At `44rem` and below, stack paired content, routes, and project-group labels without changing reading order; the schematic plate caps at `25rem`. At `24rem` and below, tighten masthead gaps and link type rather than hiding navigation.
+- Masthead, workspace, and footer align to a centered `100rem` maximum frame. Header and footer use `clamp(1.25rem, 2.5vw, 2.25rem)` side gutters; the reading pane uses `clamp(1.25rem, 4.6vw, 4.125rem)`. The `4.0625rem` masthead height includes its baseline rule.
+- The wide workspace pairs a `clamp(12rem, 21vw, 18.25rem)` tree with a fluid reading pane. The tree has `2.125rem` block padding and fluid inner gutters (`clamp(.75rem, 1.55vw, 1.375rem)`). The README has `1.875rem` top padding and `clamp(3rem, 6vw, 5rem)` bottom padding. The recovery page uses the same reading gutter with `clamp(4rem, 12vw, 10rem)` block padding.
+- Repository rows place a `1rem` folder, fluid copy, a `7.5–10rem` topic column, and a `1rem` arrow in one grid. At `68rem` and below, the topic moves beneath the copy and the icons align to the first line area.
+- At `52rem` and below, the tree gives way to a wrapping topic nav after the bio; the content stays in order. The masthead drops to `3.75rem`, and the README top padding to `1rem`. Topic links use a fluid column gap (`clamp(.625rem, 3vw, 1.4rem)`). At `24rem` and below, the wordmark tightens and the repositories action wraps beneath the section heading.
 
 ## Elevation & Depth
 
-**The Flat Plate Rule.** No shadows. Separate surfaces with a change of ground, a keyline, or space; show interaction with a fill, underline, or outline rather than lift.
+**The Flat Workspace Rule.** No shadows. Separate regions with tone, space, or a one-pixel keyline. Show interaction with a fill, underline, or outline rather than lift.
 
 ## Shapes
 
-Keep panels and arrow frames square. Use one-pixel dividers to join or subdivide regions, and reserve circles for small terminal marks. Grids and registration crosses belong inside the schematic artwork rather than behind body text.
+Structural surfaces and rows are square, with one-pixel block rules and a vertical guide for nested tree paths. Small inline SVGs use simple strokes: a branch, folders, and directional arrows. Keep the geometry in those marks, not in ornamental frames or backgrounds.
 
 ## Components
 
-- **Masthead:** pin-and-name home link, plain navigation with a one-pixel baseline, and underlines on hover. The wordmark and navigation links are at least `2.75rem` tall; the home link exposes `aria-current="page"` on the homepage.
-- **Route links:** a shared cobalt strip split by keylines. Each full-width anchor points to a real section; its peach terminal and arrow are decorative. Hover and keyboard focus fill the row with Plate Blue; hover alone shifts the arrow `.2rem` over `.28s`. Reduced motion removes the transition and shift.
-- **Project group:** the target state (`:target`) gives the whole group a pale blue tint and a cobalt top rule. Its normally cobalt pin turns peach, with a `1px` cobalt outline offset by `2px`. The state persists while the URL fragment points to the group, independent of hover and focus.
-- **Repository row:** a single anchor covers the title, description, and `2.75rem` square arrow frame. Hover or focus underlines the title and reverses the frame from cobalt on paper to paper on cobalt. Use the underlined cobalt text link for standalone index actions.
-- **Schematic plate:** an original inline SVG monogram inside a darker ruled frame, with a grid, traces, and terminal dots. The mark is decorative and hidden from assistive technology; the name is text and the handle is a visible figure caption.
+- **Masthead and footer:** the branch-and-handle wordmark is a home link with an explicit accessible name and `aria-current="page"` on home. The GitHub profile, repositories index, recovery, and back-to-top actions are labeled text links with direction-appropriate SVG arrows. The wordmark underlines on hover; standalone links thicken their underline to `2px`. These links, tree links, and mobile topic links have a `2.75rem` minimum block size.
+- **Directory tree and breadcrumb:** the tree uses nested lists of native links: `#readme`, `#projects`, and one fragment per repository slug. README receives the quiet pane highlight unless the projects section or one of its descendants is targeted; this is a visual default, not an announced current tree item. Tree hover and focus use the same pane fill and keyline. The separate breadcrumb links to the site source repository and marks `README.md` as the current page; its slash is decorative.
+- **Mobile topic nav:** use wrapping, underlined links between one-pixel rules, each pointing to its project group. The same group data supplies the labels and row annotations; no script or separate mobile data is needed.
+- **Repository row:** a single anchor opens the actual repository. Its accessible name comes from the visible repository name and summary. The topic annotation repeats the group's label visually and is hidden from assistive technology. Keep group headings visually hidden but available in the heading hierarchy. The first row uses Pane Green at rest when no fragment inside the index is targeted. Hover or focus gives any row that fill with a mint, underlined name. On hover only, the arrow shifts `(.12rem, -.12rem)` over `.22s` with `cubic-bezier(.2, 1, .3, 1)`. Reduced motion removes both transition and shift.
+- **Fragment destinations:** a repository slug highlights just that row; a topic fragment highlights every row in its group. Both use Target Green, a `1px` Sage Target Keyline inset by `1px`, and a mint title. A fragment inside the index clears the default first-row tint. `#projects` clears the tree's default README highlight but does not mark a repository or group as the destination. The target style persists independently of pointer or keyboard state.
+- **Focus and skip link:** anchors use a `2px` Mint Signal `:focus-visible` outline with a `4px` offset; tree links use `0` offset and repository rows use an inset `-3px` offset. Keyboard focus on a targeted row replaces its destination outline with the mint focus outline while retaining the target fill. The focus-only skip link jumps to `main` (`tabindex="-1"`); main itself has no outline. Root scroll padding keeps `1.125rem` of space above fragment arrivals.
+- **404 recovery:** reuse the shared shell, display scale, and labeled arrow link. Offer a real path back to the profile and a direct link to `/#projects`, without a separate error palette.
 
 ## Do's and Don'ts
 
-- **Do** use native links and fragment targets so navigation and content work without JavaScript.
-- **Do** keep the skip link, meaningful headings, visible text labels, and the `2px` current-color focus outline with `4px` offset.
-- **Do** keep decorative arrows and marks out of the accessibility tree.
-- **Don't** add shadows or round the structural frames.
-- **Don't** ship raster artwork; keep the schematic mark and icons as vectors.
+- **Do** use native anchors and meaningful fragment targets so navigation and content work without JavaScript.
+- **Do** preserve the skip link, heading hierarchy, visible link labels, and distinct keyboard-focus outlines.
+- **Do** keep decorative branch, folder, and arrow SVGs out of the accessibility tree.
+- **Don't** add shadows, round the structural frames, or turn repository rows into detached cards.
+- **Don't** add fake controls or terminal chrome. Use inline vector marks alongside text rather than raster decoration or glyphs standing in for icons.

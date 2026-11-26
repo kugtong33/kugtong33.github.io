@@ -56,3 +56,18 @@ The generated site is an artifact, not source; Pages publishes only `_site/`.
 - Automated axe checks found no WCAG A/AA violations at the two
   captured widths; that does not replace a manual accessibility audit.
 - `actionlint` validated the Pages workflow.
+
+## Source Tree redesign
+
+The owner selected a repository-inspired layout after comparing two concepts.
+The redesign keeps the profile identity, four projects, Eleventy build, and
+Pages deployment. It preserves the published topic fragments and adds a
+direct fragment for each repository row.
+
+Validation covered the new layout at eight widths from 320px to 1440px,
+including both sides of the navigation breakpoint. All four repository rows
+fit in the 1440×900 first viewport. Keyboard jump and focus behavior,
+existing links without JavaScript, and the 404 recovery link were exercised.
+Automated accessibility checks found no WCAG A/AA violations at the tested
+desktop and phone sizes. The independent Impeccable finish review returned
+`ship` with no material fixes.

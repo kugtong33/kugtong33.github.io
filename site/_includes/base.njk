@@ -1,11 +1,11 @@
-{% from "icons.njk" import arrow %}
+{% from "icons.njk" import arrow, branch %}
 {% set fullName = profile.firstName + " " + profile.lastName %}
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#192bad">
+  <meta name="theme-color" content="#0e1a17">
   <title>{{ (title or (fullName + " — " + profile.role)) | escape }}</title>
   <meta name="description" content="{{ (description or profile.description) | escape }}">
   {% if noIndex %}
@@ -23,21 +23,18 @@
 <body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="shell masthead">
-      <a class="wordmark" href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>
-        <span class="wordmark-pin" aria-hidden="true"></span>{{ fullName }}
+    <div class="site-frame masthead">
+      <a class="wordmark" href="/" aria-label="@{{ profile.handle }} — {{ fullName | escape }} homepage"{% if page.url == "/" %} aria-current="page"{% endif %}>
+        {{ branch() }} @{{ profile.handle }}
       </a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="/#projects">Projects</a>
-        <a href="{{ profile.github }}">GitHub {{ arrow() }}</a>
-      </nav>
+      <a class="masthead-link" href="{{ profile.github }}">GitHub profile {{ arrow() }}</a>
     </div>
   </header>
   <main id="main" tabindex="-1">
     {{ content | safe }}
   </main>
   <footer class="site-footer">
-    <div class="shell footer-inner">
+    <div class="site-frame footer-inner">
       <span>{{ fullName }}<span class="footer-location"> · {{ profile.location }}</span></span>
       <a href="#top">Back to top {{ arrow("up") }}</a>
     </div>

@@ -3,27 +3,29 @@
 - Route: `/`; mode: Experience.
 - Audience: engineering peers looking for a short introduction and examples.
 - Proof: a first-person, sourced bio and links to four public repositories.
-- Chosen direction: Signal Plate, profile first and code-first.
+- Chosen direction: Source Tree, profile first and code-first.
 
 ## Direction contract
 
-**Thesis:** A profile should connect a person to the work they can actually
-show, not lead with a stack of skill badges.
+**Thesis:** Opening the profile should feel like opening a well-kept
+repository. The bio reads like a README and the real work appears within
+the first screen, not beneath a decorative hero.
 
-**Own-world:** A matte cobalt routing sheet, warm white type, a peach signal
-color, and a light paper project index. Keylines and terminal dots mark
-connections. An original monogram replaces the non-portrait GitHub avatar.
+**Own-world:** Spruce-black ground, a slightly brighter directory pane, jade
+for links and focus, and a calm reading surface. Use monospace for paths
+and repository names, not for paragraphs. No editor chrome or fake commands.
 
-**Story:** Read Arjay’s name and bio, follow a labeled route to an engineering
-interest, then open a repository for the evidence.
+**Story:** Read Arjay’s name and bio, locate a public lab by its path or
+topic, and open the real repository. A local jump makes its destination
+visible without a script.
 
-**First viewport:** On desktop, set the two-line name and bio opposite the
-large, framed monogram. Put the three real jump links in a shared routing
-strip at the foot of the plate. On phones, stack the identity, compact
-graphic, and route links in reading order.
+**First viewport:** Under a thin masthead, a directory rail occupies about a
+fifth of the desktop width. The adjacent README contains a one-line name,
+bio, and four ruled repository rows. On phones, read the bio first, then
+jump by topic using a compact index or continue directly into the list.
 
-**Form:** Printed signal-routing plate; grounded direction 7, user-selected.
-`seed:b8b95ede96b6f280`
+**Form:** Repository browser; grounded direction 6, user-selected from the
+[redesign exploration](profile-redesign-options.md). `seed:52d51bdb2b2e7aad`
 
 **Finish:** unreviewed and undocumented is unfinished; this build ends with
 the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance

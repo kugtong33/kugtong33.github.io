@@ -23,14 +23,13 @@ function attr(node, name) {
 }
 
 function text(node) {
-  if (node.tagName === "br") return " ";
   return node.value ?? (node.childNodes ?? []).map(text).join("");
 }
 
 test("the homepage identifies Arjay and links to the four selected public labs", () => {
   const nodes = elements(pages.get("index.html"));
   const headings = nodes.filter((node) => node.tagName === "h1");
-  assert.deepEqual(headings.map(text), ["Arjay Sitoy."]);
+  assert.deepEqual(headings.map(text), ["Arjay Sitoy"]);
   const canonical = nodes.find((node) => attr(node, "rel") === "canonical");
   assert.equal(attr(canonical, "href"), `${origin}/`);
   const repos = nodes.filter((node) => attr(node, "class") === "project-link");
@@ -40,6 +39,26 @@ test("the homepage identifies Arjay and links to the four selected public labs",
     "https://github.com/kugtong33/labs-local-llm",
     "https://github.com/kugtong33/labs-wikirag",
   ]);
+});
+
+test("repository navigation preserves topic URLs and reaches each project row", () => {
+  const nodes = elements(pages.get("index.html"));
+  const tree = nodes.find((node) => attr(node, "class") === "tree-rail");
+  const treeAnchors = elements(tree).filter((node) => node.tagName === "a");
+  assert.deepEqual(treeAnchors.map((node) => attr(node, "href")), [
+    "#readme",
+    "#projects",
+    "#labs-kube-autoscaling",
+    "#labs-aws-profiler",
+    "#labs-local-llm",
+    "#labs-wikirag",
+  ]);
+
+  const topics = nodes.find((node) => attr(node, "class") === "topic-nav");
+  assert.deepEqual(
+    elements(topics).filter((node) => node.tagName === "a").map((node) => attr(node, "href")),
+    ["#infrastructure", "#developer-tooling", "#local-ai"],
+  );
 });
 
 test("published local links, assets, and fragment IDs resolve", async () => {

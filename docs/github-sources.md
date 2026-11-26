@@ -18,8 +18,8 @@ commercial outcomes. Employer, client work, contact details, and the unrelated
 social URL in the GitHub profile are not republished.
 
 The public [GitHub avatar](https://avatars.githubusercontent.com/u/3274087?v=4)
-is a cat meme rather than a headshot. The site uses an original vector
-monogram; it does not republish or hotlink the avatar.
+is a cat meme rather than a headshot. The site does not republish or hotlink
+the avatar.
 
 The display face is [Chivo](https://fonts.google.com/specimen/Chivo), served
 locally as a Latin WOFF2 subset. Its SIL Open Font License is packaged next
